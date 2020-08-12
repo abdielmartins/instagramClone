@@ -1,0 +1,51 @@
+/*
+Theme Name: Instagram
+Author: Kenzie Academy
+Author URI: kenzie.com.br;
+Version: 1.0
+ 
+--------------------------------------------
+SUGESTÃO DE ESTRUTURAÇÃO BASE 
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** BODY
+**** TOPO
+**** RODAPÉ
+**** PÁGINA INICIAL
+*/
+
+/* VARIÁVEIS */
+:root{
+  
+}
+
+/*BODY*/
+body{
+
+}
+
+/*TOPO*/
+header{
+	
+}
+
+/*RODAPÉ*/
+footer{
+
+}
+
+/*PÁGINA INICIAL*/
+main{
+	
+}
+	main .profile-content{
+
+	}
+
+	main .highlighted-stories{
+
+	}
+
+	main .profile-posts{
+
+	}
