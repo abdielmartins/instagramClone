@@ -32,6 +32,7 @@ body {
 	overflow: hidden;
 	position: fixed;
 	top: 0;
+	z-index: 3;
 	width: 100%;
 	height: 50px;
 	background: white;
@@ -239,11 +240,6 @@ main .profile-posts a.disabled:hover {
 	color: var(--color-ig);
 }
 
-main .profile-posts img {
-	max-width: var(--galery-size-width);
-	max-height: var(--galery-size-height);
-}
-
 main .profile-posts ul {
 	list-style-type: none;
 	columns: 3;
@@ -255,5 +251,51 @@ main .profile-posts ul {
 main .profile-posts figure {
 	padding: 0;
 	margin: 0;
+	max-width: var(--galery-size-width);
+	max-height: var(--galery-size-height);
 	width: 100%;
+}
+
+main .profile-posts figure {
+	position: relative;
+}
+
+main .profile-posts figure > * {
+	z-index: 1;
+}
+
+main .profile-posts .overlayIcons {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: whitesmoke;
+	opacity: 0.8;
+	visibility: hidden;
+}
+
+main .profile-posts .overlayIcons i:first-child {
+	padding-right: 15px;
+}
+
+
+main .profile-posts figure:hover::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: #333;
+	position: absolute;
+	top: 0;
+	left: 0%;
+	opacity: 0.5;
+	z-index: 0;
+}
+
+main .profile-posts figure:hover .overlayIcons {
+	visibility: visible;
+}
+
+main .profile-posts img {
+	max-width: inherit;
+	max-height: inherit;;
 }
