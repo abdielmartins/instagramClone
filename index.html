@@ -11,20 +11,32 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css" />
 
+	<!-- ICONS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- FAVICON -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 
 </head>
 <body>
 	<!-- CABEÇALHO -->
-	<header>
-		<a href="https://www.instagram.com/" class="instagram-logo">
-			<figure>
-				<img src="img/logo.png" alt="Instagram logo">
-			</figure>
-		</a>
-	</header>
-
+	<div class="fixedHeader">
+		<header>
+			<a href="https://www.instagram.com/" class="instagram-logo">
+				<figure>
+					<img src="img/logo.png" alt="Instagram logo">
+				</figure>
+			</a>
+			<input type="text" value="Pesquisar">
+			<nav>
+				<a href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-paper-plane-o fa-lg" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-compass fa-lg" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-heart-o fa-lg" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i></a>
+			</nav>
+		</header>
+	</div>
 	<!-- CONTEÚDO DA PÁGINA -->
 	<main>
 
@@ -40,27 +52,30 @@
 
 			<!-- DETALHES/INFORMAÇÕES DO USUÁRIO -->
 			<section class="profile-info">
-				<h1>kenzieacademybr</h1>
-
+				<div class="profile-data-header">
+					<h1>kenzieacademybr</h1>
+				</div>
 				<!-- POSTS/SEGUIDORES/SEGUINDO -->
-				<div class="profile-data">
+				<div class="profile-data-stats">
 					<p><span>122</span> posts</p>
 					<p><span>2,589</span> followers</p>
 					<p><span>227</span> following</p>
 				</div>
-
-				<h2>Kenzie Academy Brasil</h2>
-				<ul>
-					<li>
-						<p>Nós investimos em você. Aprenda programação sem mensalidade até conseguir uma remuneração de pelo menos R$3.000 por mês.</p>
-					</li>
-					<li>
-						<p>Inscreva-se através do link.</p>
-					</li>
-					<li>
-						<a href="https://linktr.ee/kenzieacademybr">linktr.ee/kenzieacademybr</a>
-					</li>
-				</ul>
+				<!-- DESCRICAO DO PERFIL DO USUÁRIO -->
+				<div class="profile-data-description">
+					<h2>Kenzie Academy Brasil</h2>
+					<ul>
+						<li>
+							<p>Nós investimos em você. Aprenda programação sem mensalidade até conseguir uma remuneração de pelo menos R$3.000 por mês.</p>
+						</li>
+						<li>
+							<p>Inscreva-se através do link.</p>
+						</li>
+						<li>
+							<a href="https://linktr.ee/kenzieacademybr">linktr.ee/kenzieacademybr</a>
+						</li>
+					</ul>
+				</div>
 			</section>
 		</article>
 
@@ -75,8 +90,26 @@
 				</li>
 				<li>
 					<figure>
-						<img src="img/highlight.jpg" alt="Highlight">
+						<img src="img/highlight1.jpg" alt="Highlight">
 						<figcaption>Open House</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="img/highlight2.jpg" alt="Highlight">
+						<figcaption>Q&A</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="img/highlight3.jpg" alt="Highlight">
+						<figcaption>#namídia</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="img/highlight4.jpg" alt="Highlight">
+						<figcaption>Nosso time</figcaption>
 					</figure>
 				</li>
 			</ul>
@@ -87,9 +120,9 @@
 
 			<!-- MENU DE POSTS -->
 			<nav>
-				<a href="#">Posts</a>
-				<a href="#">Igtv</a>
-				<a href="#">Tagged</a>
+				<a href="#"><i class="fa fa-table" aria-hidden="true">&nbsp;</i> Posts</a>
+				<a href="#" class="disabled"><i class="fa fa-television" aria-hidden="true">&nbsp;</i> Igtv</a>
+				<a href="#" class="disabled"><i class="fa fa-address-book-o" aria-hidden="true">&nbsp;</i> Tagged</a>
 			</nav>
 
 			<!-- LISTA DE POSTS -->
@@ -99,7 +132,7 @@
 				<li>
 					<a href="#">
 						<figure>
-							<img src="img/post1.jpg" alt="Post">
+							<img src="img/post1.jpg" alt="Post" class="second">
 						</figure>
 					</a>
 				</li>
